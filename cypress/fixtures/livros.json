@@ -10,8 +10,11 @@
 {
 "livro": "O Hobbit",
 "categoria":"Fantasia"
+},
+{
+"livro": "A Arte da Guerra",
+"categoria":"Estratégia"
 }
-
 
 
 

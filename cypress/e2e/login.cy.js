@@ -24,9 +24,11 @@ describe('funcionalidade: Login', () => {
 
 
 
-    it.only('Deve fazer login com sucesso - usando importação da massa de dados', () => {
-        cy.login(user.email, user.senha)
+    it('Deve fazer login com sucesso - usando importação da massa de dados', () => {
+        cy.login(user[0].email, user[0].senha)
+    });
 
-
+    it('Deve fazer login com sucesso - usando importação da massa de dados(admin)', () => {
+        cy.login(user[1].email, user[1].senha)
     });
 });
