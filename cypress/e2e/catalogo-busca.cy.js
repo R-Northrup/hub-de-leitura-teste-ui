@@ -1,12 +1,11 @@
 /// <reference types = "cypress"/>
 import catalogo from "../fixtures/livros.json";
-import CadastroPage from "../support/pages/cadastro-page";
 
 describe('Funcionalidade: Busca no catálogo', () => {
     beforeEach(() => {
-        CadastroPage.visitarPaginaCadastro()
+        cy.visit('catalog.html')
     });
-
+   
 
     it('Deve fazer a busca do livro 1984 com sucesso', () => {
         cy.get('#search-input').type('1984')
@@ -34,12 +33,6 @@ describe('Funcionalidade: Busca no catálogo', () => {
 
 
         })
-
-    });
-
-    it.only('Deve fazer cadastro com sucesso - usando Page Objects', () => {
-
-
 
     });
 });

@@ -4,7 +4,8 @@
   "description": "Aprendizado de automatização de testes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run --browser chrome",
+    "cy:report": "npx cypress run --browser chrome--record --config projectId=f5atyq --key 92ca4ba9-edc1-4db8-819a-1ce080054e79"
   },
   "repository": {
     "type": "git",

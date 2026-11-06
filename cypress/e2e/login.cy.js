@@ -3,7 +3,9 @@ import user from "../fixtures/usuario.json"
 
 describe('funcionalidade: Login', () => {
     beforeEach(() => {cy.visit('login.html')});
-
+    afterEach(() => {
+        cy.screenshot()
+    });
     it('Deve fazer login com sucesso', () => {
         cy.get('#email').type('usuario@teste.com')
         cy.get('#password').type('user123')

@@ -9,6 +9,8 @@ describe('Cadastro no Hub de Leitura', () => {
         CadastroPage.visitarPaginaCadastro()
     });
 
+
+
     it('Deve fazer cadastro com sucesso usando função JS', () => {
         let email = `teste${Date.now()}@teste.com`
 
@@ -91,7 +93,7 @@ describe('Cadastro no Hub de Leitura', () => {
     });
 
 
-    it.only('Deve validar mensagem ao tentar cadastrar com senhas que não coincidem', () => {
+    it('Deve validar mensagem ao tentar cadastrar com senhas que não coincidem', () => {
         let nome1 = faker.person.firstName()
         let nome2 = faker.person.lastName()
         let email = faker.internet.email({ firstName: nome1, lastName: nome2 })

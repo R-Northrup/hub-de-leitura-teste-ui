@@ -4,6 +4,7 @@ describe('Funcionalidade: catálogo de livros', () => {
     beforeEach(() => {
         cy.visit('catalog.html')
     });    
+   
     
     it.skip('Deve clicar no botão "adicionar à Cesta"', () => {
         cy.get(':nth-child(1) > .card > .card-body > .mt-auto > .d-grid > .btn-primary').click()
